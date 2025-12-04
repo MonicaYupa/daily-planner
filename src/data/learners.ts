@@ -37,13 +37,13 @@ Javi pulls up his portfolio: screenshots of data dashboards, a short memo he dra
 
 They also check in on the "purpose" side: Is civil engineering still feeling like his lane? So far, the answer is yes. He likes being able to point to a map and say, "This is where the new crosswalk will go," and know that decision might literally save lives.
 
-Fast-forward a year: Javi completes his Phase 3 Rite of Passage—a public defense of his portfolio in front of city staff, family members, younger Waves learners, and a panel of engineering faculty. He doesn't just show what he did; he explains how each experience clarified his choice to pursue engineering as a way to serve his community.
+Fast-forward a year: Javi completes his Phase 3 – Experiencing Rite of Passage—a public defense of his portfolio in front of city staff, family members, younger Waves learners, and a panel of engineering faculty. He doesn't just show what he did; he explains how each experience clarified his choice to pursue engineering as a way to serve his community.
 
 He graduates from Waves Prep and is accepted into Cornell's Engineering School.
 
 The relationship doesn't end there. During his first year at Cornell, he still checks in virtually with Mr. Lee and a small group of Waves alumni tackling demanding STEM programs around the country. They trade strategies on time management, impostor syndrome, and office-hours etiquette.
 
-And one afternoon each week, Javi is back on the other side of the equation: logging into a Waves Prep Zoom room as a volunteer mentor for Phase 1 students. He listens to ninth-graders talk about their first design challenges and offers small, grounded reflections:
+And one afternoon each week, Javi is back on the other side of the equation: logging into a Waves Prep Zoom room as a volunteer mentor for Phase 1 – Discovery students. He listens to ninth-graders talk about their first design challenges and offers small, grounded reflections:
 
 "Yeah, I remember when I thought engineering was just being good at math. Let me show you how much of it is actually about talking to people and solving real problems."
 
@@ -131,7 +131,7 @@ Javi is still very much in his own Experiencing phase—testing himself in a dem
         phase: 2,
         image: '/images/javi/workshop.png',
         overview:
-          'Designed and facilitated a 6-week workshop series teaching data science fundamentals to Phase 1 students. Created curriculum covering Python basics, data cleaning, and visualization. 15 students completed the program with 90% reporting increased confidence in coding.',
+          'Designed and facilitated a 6-week workshop series teaching data science fundamentals to Phase 1 – Discovery students. Created curriculum covering Python basics, data cleaning, and visualization. 15 students completed the program with 90% reporting increased confidence in coding.',
         evidence: [
           {
             id: 'javi-ev-2-1',
@@ -187,7 +187,7 @@ Javi is still very much in his own Experiencing phase—testing himself in a dem
       {
         phase: 3,
         title: 'Phase 3 – Experiencing',
-        description: 'A typical Phase 3 week while Javi is dual-enrolled in college courses, embedded in the local public works department, and supported by the Waves Prep homebase.',
+        description: 'A typical Phase 3 – Experiencing week while Javi is dual-enrolled in college courses, embedded in the local public works department, and supported by the Waves Prep homebase.',
         legend: [
           { emoji: '🏠', label: 'Waves Homebase', color: '#e0f2fe' },
           { emoji: '🎓', label: 'Dual-Enrollment College', color: '#dbeafe' },
@@ -212,7 +212,7 @@ Javi is still very much in his own Experiencing phase—testing himself in a dem
           { emoji: '🎓', label: 'Cornell Coursework', color: '#dbeafe' },
           { emoji: '📚', label: 'Study & Project Work', color: '#dcfce7' },
           { emoji: '🧠', label: 'Waves Alumni Support', color: '#e9d5ff' },
-          { emoji: '🤝', label: 'Mentoring Phase 1 Students', color: '#fef3c7' },
+          { emoji: '🤝', label: 'Mentoring Phase 1 – Discovery Students', color: '#fef3c7' },
         ],
         schedule: [
           { time: '8:30–10:00', monday: '🎓 Calculus III lecture', tuesday: '🎓 Physics (Mechanics) lecture', wednesday: '🎓 Calculus III recitation', thursday: '🎓 Physics discussion section', friday: '🎓 Intro to Engineering seminar' },
@@ -221,7 +221,7 @@ Javi is still very much in his own Experiencing phase—testing himself in a dem
           { time: '1:00–3:00', monday: '🎓 Physics lab', tuesday: '🎓 Computing / programming lab', wednesday: '📚 Project work (design studio)', thursday: '🎓 Engineering seminar / workshop', friday: '📚 Catch-up work or rest' },
           { time: '3:00–4:00', monday: '📚 Individual study or tutoring center', tuesday: '📚 Study group (shared problem sets)', wednesday: '📚 Library deep work block', thursday: '📚 Planning & organizing next week', friday: 'Free / campus activities' },
           { time: '4:00–5:00', monday: '🧠 Waves alumni small-group check-in (virtual)', tuesday: 'Independent time', wednesday: 'Independent time', thursday: 'Independent time', friday: 'Independent time' },
-          { time: '7:00–8:00 (Tue)', monday: 'Evening study', tuesday: '🤝 Volunteer mentoring with Waves Phase 1 students', wednesday: 'Evening study', thursday: 'Evening study', friday: 'Evening social / clubs' },
+          { time: '7:00–8:00 (Tue)', monday: 'Evening study', tuesday: '🤝 Volunteer mentoring with Waves Phase 1 – Discovery students', wednesday: 'Evening study', thursday: 'Evening study', friday: 'Evening social / clubs' },
         ],
       },
     ],
@@ -238,13 +238,13 @@ Javi is still very much in his own Experiencing phase—testing himself in a dem
       'Community Service',
     ],
     storyAudio: '/audio/amaya-story.mp3',
-    story: `I'm Amaya, a Waves Prep grad in Phase 3. I'm working and saving to start a food truck.
+    story: `I'm Amaya, a Waves Prep grad in Phase 3 – Experiencing. I'm working and saving to start a food truck.
 
 I came into Waves not thinking I was "school smart." I loved cooking and figured I'd end up working in retail or at a fast-food restaurant eventually. During a food project, I became the person classmates relied on in the kitchen. In reflections, my mentor said, "This is creativity, adaptability, responsibility," and I started to see those as my strengths.
 
-In Phase 2, I worked at a neighborhood bakery. I expected to just bake, but I also learned costs, schedules, and what it takes to keep a business open. It was like seeing the backstage of a show. My competency map showed big strengths in creativity and personal responsibility. That's when I really locked onto food as my path. I decided that in my Phase 3, I wanted to prepare to run my own food business.
+In Phase 2 – Exploration, I worked at a neighborhood bakery. I expected to just bake, but I also learned costs, schedules, and what it takes to keep a business open. It was like seeing the backstage of a show. My competency map showed big strengths in creativity and personal responsibility. That's when I really locked onto food as my path. I decided that in my Phase 3 – Experiencing, I wanted to prepare to run my own food business.
 
-My Phase 3 was built around a local food truck and a business plan for launching my own. I cooked, worked the line and the window, and saw up close how a business survives. I kept asking, "Do I still want this after seeing the hard parts?" The answer stayed yes.
+My Phase 3 – Experiencing was built around a local food truck and a business plan for launching my own. I cooked, worked the line and the window, and saw up close how a business survives. I kept asking, "Do I still want this after seeing the hard parts?" The answer stayed yes.
 
 And I'm already in the food world, saving for my truck and mentoring younger Waves learners.
 
@@ -363,7 +363,7 @@ Waves Prep gave us phases, real experiences, and space to decide who we're becom
         phase: 3,
         image: '/images/amaya/working-la-ola.png',
         overview:
-          'My Phase 3 capstone was built around La Ola Street Kitchen food truck. I cooked, worked the line and the window, and saw up close how a food business survives day-to-day. I kept asking myself, "Do I still want this after seeing the hard parts?" The answer stayed yes.',
+          'My Phase 3 – Experiencing capstone was built around La Ola Street Kitchen food truck. I cooked, worked the line and the window, and saw up close how a food business survives day-to-day. I kept asking myself, "Do I still want this after seeing the hard parts?" The answer stayed yes.',
         evidence: [
           {
             id: 'amaya-ev-3-1',

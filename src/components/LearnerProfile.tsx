@@ -12,6 +12,12 @@ interface LearnerProfileProps {
   onShowCalendar?: () => void;
 }
 
+const phaseNames: Record<number, string> = {
+  1: 'Discovery',
+  2: 'Exploration',
+  3: 'Experiencing',
+};
+
 export default function LearnerProfile({ learner, onSelectExperience, onShowCalendar }: LearnerProfileProps) {
   const [isPlaying, setIsPlaying] = useState(false);
   const [audioElement, setAudioElement] = useState<HTMLAudioElement | null>(null);
@@ -77,7 +83,7 @@ export default function LearnerProfile({ learner, onSelectExperience, onShowCale
         <h1 className="text-3xl font-bold bg-gradient-to-r from-sky-600 to-cyan-600 bg-clip-text text-transparent mb-1">
           Meet {learner.name}
         </h1>
-        <p className="text-sky-500 font-medium mb-4">Phase {learner.phase} student</p>
+        <p className="text-sky-500 font-medium mb-4">Phase {learner.phase} – {phaseNames[learner.phase]}</p>
 
         {/* Professional Interests */}
         <div className="flex flex-wrap gap-2 justify-center">

@@ -9,7 +9,7 @@ export default function ExperienceCard({ experience, onClick }: ExperienceCardPr
   return (
     <button
       onClick={onClick}
-      className="wave-card rounded-xl overflow-hidden text-left w-full group"
+      className="wave-card rounded-xl overflow-hidden text-left w-full group flex flex-col"
     >
       {/* Experience Image */}
       <div className={`h-32 overflow-hidden ${experience.image ? '' : 'bg-gradient-to-br from-sky-100 to-cyan-100 flex items-center justify-center'}`}>
@@ -17,7 +17,7 @@ export default function ExperienceCard({ experience, onClick }: ExperienceCardPr
           <img
             src={experience.image}
             alt={experience.title}
-            className="w-full h-full object-cover object-top"
+            className="w-full h-full object-cover object-top block"
           />
         ) : (
           <svg
@@ -40,9 +40,9 @@ export default function ExperienceCard({ experience, onClick }: ExperienceCardPr
       {/* Content */}
       <div className="p-4">
         <h3 className="font-semibold text-sky-800 mb-1 group-hover:text-sky-600 transition-colors">
-          Experience {experience.number}
+          {experience.title}
         </h3>
-        <p className="text-sm text-sky-500 mb-2">{experience.title}</p>
+        <p className="text-sm text-sky-500 mb-2 line-clamp-2">{experience.overview}</p>
         <div className="flex items-center justify-between">
           <span className="text-xs text-sky-400">Phase {experience.phase}</span>
           <div className="flex items-center text-xs text-cyan-600 font-medium">
