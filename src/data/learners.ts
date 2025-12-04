@@ -12,6 +12,42 @@ export const learners: Learner[] = [
       'Public Policy',
       'Data Analytics',
     ],
+    storyAudio: '/audio/javi-story.mp3',
+    story: `Javi swipes into the Waves Prep home base just before 8:30. It's quiet but not empty—half a dozen other dual-enrollment students are already logged into their laptops, earbuds in, coffee cups out. Today is a "college block" morning: three hours dedicated to his online Calculus II course through Metro Community College.
+
+He grabs his usual spot at a high table, opens his notebook, and joins the live session. The environment feels different from a typical high school classroom: the professor is teaching to a mix of 19- and 20-year-olds on campus and dual-enrolled students like Javi who are scattered across the city. But Javi isn't alone; he can glance up and see other Waves Prep students wrestling with the same level of work, ready to commiserate or celebrate after the lecture ends.
+
+When class wraps, the Waves dual-enrollment coach does a quick stand-up with the group:
+
+What did you understand better after today's session?
+What's one thing you're still fuzzy on?
+How does this connect to the kind of work you want to do?
+
+Javi talks about related rates and how it might show up in modeling traffic flow—something he's actually seen the civil engineers at Public Works talk about. He flags a couple of problems to review with AI tutoring later that afternoon.
+
+By late morning, he's biking across town to his paid internship at the city's public works department. Two days a week he's there, embedded with the civil engineering team. Today he's helping validate data from a recent survey of sidewalk conditions and mapping where upgrades are most urgent.
+
+Javi's mentor, Ms. Alvarez, treats him like a junior team member: she walks him through how the city prioritizes projects, what constraints they're working under, and why the "right" answer is always a negotiation between safety, cost, and politics. She's explicit about the competencies he's practicing: quantitative reasoning, technical communication, and systems thinking.
+
+Around 3:30, he heads back to home base for his weekly session with his Waves Prep mentor, Mr. Lee. They don't talk about homework first. Instead, Mr. Lee asks:
+
+"Where did you feel most 'like an engineer' this week? And where did you feel out of your depth?"
+
+Javi pulls up his portfolio: screenshots of data dashboards, a short memo he drafted for Ms. Alvarez, and notes from his Calc II class. Together they map these artifacts onto his competency grid. Javi notices that while his technical skills are growing steadily, he's still not as confident speaking up in big meetings.
+
+They also check in on the "purpose" side: Is civil engineering still feeling like his lane? So far, the answer is yes. He likes being able to point to a map and say, "This is where the new crosswalk will go," and know that decision might literally save lives.
+
+Fast-forward a year: Javi completes his Phase 3 Rite of Passage—a public defense of his portfolio in front of city staff, family members, younger Waves learners, and a panel of engineering faculty. He doesn't just show what he did; he explains how each experience clarified his choice to pursue engineering as a way to serve his community.
+
+He graduates from Waves Prep and is accepted into Cornell's Engineering School.
+
+The relationship doesn't end there. During his first year at Cornell, he still checks in virtually with Mr. Lee and a small group of Waves alumni tackling demanding STEM programs around the country. They trade strategies on time management, impostor syndrome, and office-hours etiquette.
+
+And one afternoon each week, Javi is back on the other side of the equation: logging into a Waves Prep Zoom room as a volunteer mentor for Phase 1 students. He listens to ninth-graders talk about their first design challenges and offers small, grounded reflections:
+
+"Yeah, I remember when I thought engineering was just being good at math. Let me show you how much of it is actually about talking to people and solving real problems."
+
+Javi is still very much in his own Experiencing phase—testing himself in a demanding college environment—but now he's also part of the ecosystem that helped him get there, giving younger learners an early glimpse of what purposeful work can look like.`,
     profile: {
       competencies: [
         {

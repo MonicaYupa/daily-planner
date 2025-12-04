@@ -41,6 +41,8 @@ export interface Learner {
   phase: number;
   photo: string;
   professionalInterests: string[];
+  story?: string;
+  storyAudio?: string;
   profile: LearnerProfile;
   experiences: Experience[];
 }
