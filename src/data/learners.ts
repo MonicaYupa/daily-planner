@@ -5,7 +5,7 @@ export const learners: Learner[] = [
     id: 'javi',
     name: 'Javi',
     phase: 3,
-    photo: '/photos/javi.jpg',
+    photo: '/images/javi/headshot.png',
     professionalInterests: [
       'Urban Planning',
       'Community Development',
@@ -64,6 +64,7 @@ export const learners: Learner[] = [
         number: 1,
         title: 'Community Garden Project',
         phase: 2,
+        image: '/images/javi/reflection.png',
         overview:
           'Led a team of 5 students to design and implement a community garden in partnership with the local neighborhood association. Conducted surveys to understand community needs, created a sustainable maintenance plan, and organized volunteer events that engaged over 50 community members.',
         evidence: [
@@ -81,6 +82,7 @@ export const learners: Learner[] = [
             id: 'javi-ev-1-3',
             title: 'Final Presentation',
             description: 'Slide deck presented to community stakeholders and school board',
+            image: '/images/javi/presentation.png',
           },
         ],
       },
@@ -89,6 +91,7 @@ export const learners: Learner[] = [
         number: 2,
         title: 'Data Science Workshop Series',
         phase: 2,
+        image: '/images/javi/workshop.png',
         overview:
           'Designed and facilitated a 6-week workshop series teaching data science fundamentals to Phase 1 students. Created curriculum covering Python basics, data cleaning, and visualization. 15 students completed the program with 90% reporting increased confidence in coding.',
         evidence: [
@@ -114,6 +117,7 @@ export const learners: Learner[] = [
         number: 3,
         title: 'City Bridge Internship',
         phase: 3,
+        image: '/images/javi/internship.png',
         overview:
           'Completed a 12-week internship with the City Planning Department analyzing transit accessibility data. Built interactive dashboards using Tableau to visualize commute patterns across different neighborhoods. Recommendations were incorporated into the city\'s 2024 transit improvement plan.',
         evidence: [
@@ -124,8 +128,9 @@ export const learners: Learner[] = [
           },
           {
             id: 'javi-ev-3-2',
-            title: 'Dashboard Screenshots',
-            description: 'Screenshots of interactive Tableau dashboards created during internship',
+            title: 'Dashboard & Data Review',
+            description: 'Screenshots of interactive Tableau dashboards and data analysis sessions with mentor',
+            image: '/images/javi/data-review.png',
           },
           {
             id: 'javi-ev-3-3',

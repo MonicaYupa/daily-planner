@@ -2,6 +2,7 @@ export interface Evidence {
   id: string;
   title: string;
   description: string;
+  image?: string;
   type?: 'document' | 'image' | 'video' | 'link';
   url?: string;
 }
@@ -12,6 +13,7 @@ export interface Experience {
   title: string;
   phase: number;
   overview: string;
+  image?: string;
   evidence: Evidence[];
 }
 
