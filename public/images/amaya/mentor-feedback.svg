@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fef3c7"/>
+      <stop offset="100%" style="stop-color:#fde68a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Clipboard/Document -->
+  <rect x="120" y="40" width="160" height="200" fill="white" rx="8" stroke="#d97706" stroke-width="3"/>
+  <rect x="150" y="25" width="100" height="30" fill="#f59e0b" rx="6"/>
+
+  <!-- Lines representing text -->
+  <rect x="140" y="80" width="120" height="8" fill="#fcd34d" rx="4"/>
+  <rect x="140" y="100" width="100" height="8" fill="#fcd34d" rx="4"/>
+  <rect x="140" y="120" width="110" height="8" fill="#fcd34d" rx="4"/>
+
+  <!-- Checkmarks -->
+  <circle cx="160" cy="160" r="15" fill="#10b981"/>
+  <path d="M152 160 L158 166 L170 152" stroke="white" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <circle cx="200" cy="160" r="15" fill="#10b981"/>
+  <path d="M192 160 L198 166 L210 152" stroke="white" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <circle cx="240" cy="160" r="15" fill="#10b981"/>
+  <path d="M232 160 L238 166 L250 152" stroke="white" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Star badge -->
+  <circle cx="320" cy="80" r="35" fill="#f59e0b"/>
+  <polygon points="320,50 327,70 348,70 331,82 338,102 320,90 302,102 309,82 292,70 313,70" fill="white"/>
+
+  <!-- Speech bubble -->
+  <ellipse cx="80" cy="200" rx="50" ry="40" fill="white" stroke="#3b82f6" stroke-width="3"/>
+  <polygon points="100,230 110,260 120,235" fill="white" stroke="#3b82f6" stroke-width="3"/>
+  <text x="80" y="205" text-anchor="middle" font-family="Arial" font-size="24" fill="#3b82f6">💬</text>
+</svg>

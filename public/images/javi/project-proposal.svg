@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bgProp" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dbeafe"/>
+      <stop offset="100%" style="stop-color:#bfdbfe"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#bgProp)" rx="12"/>
+
+  <!-- Main Document -->
+  <rect x="100" y="30" width="200" height="240" fill="white" rx="8" stroke="#3b82f6" stroke-width="3"/>
+
+  <!-- Document Header -->
+  <rect x="100" y="30" width="200" height="50" fill="#3b82f6" rx="8"/>
+  <rect x="100" y="60" width="200" height="20" fill="#3b82f6"/>
+  <text x="200" y="60" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="16" fill="white">PROJECT PROPOSAL</text>
+
+  <!-- Document lines -->
+  <rect x="120" y="95" width="160" height="6" fill="#e5e7eb" rx="3"/>
+  <rect x="120" y="110" width="140" height="6" fill="#e5e7eb" rx="3"/>
+  <rect x="120" y="125" width="150" height="6" fill="#e5e7eb" rx="3"/>
+
+  <!-- Sections -->
+  <rect x="120" y="150" width="80" height="8" fill="#3b82f6" rx="2"/>
+  <rect x="120" y="165" width="160" height="5" fill="#e5e7eb" rx="2"/>
+  <rect x="120" y="175" width="140" height="5" fill="#e5e7eb" rx="2"/>
+
+  <rect x="120" y="195" width="60" height="8" fill="#3b82f6" rx="2"/>
+  <rect x="120" y="210" width="160" height="5" fill="#e5e7eb" rx="2"/>
+  <rect x="120" y="220" width="130" height="5" fill="#e5e7eb" rx="2"/>
+
+  <!-- Checkmarks -->
+  <circle cx="280" y="105" r="12" fill="#10b981"/>
+  <path d="M274 105 L278 109 L287 99" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Lightbulb idea icon -->
+  <circle cx="60" cy="80" r="30" fill="#fbbf24"/>
+  <ellipse cx="60" cy="75" rx="15" ry="18" fill="#fef3c7"/>
+  <rect x="54" y="93" width="12" height="8" fill="#fbbf24" rx="2"/>
+  <line x1="60" y1="55" x2="60" y2="48" stroke="#fbbf24" stroke-width="3" stroke-linecap="round"/>
+  <line x1="45" y1="65" x2="40" y2="60" stroke="#fbbf24" stroke-width="3" stroke-linecap="round"/>
+  <line x1="75" y1="65" x2="80" y2="60" stroke="#fbbf24" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Target/Goal icon -->
+  <circle cx="340" cy="220" r="35" fill="white" stroke="#ef4444" stroke-width="4"/>
+  <circle cx="340" cy="220" r="25" fill="white" stroke="#ef4444" stroke-width="3"/>
+  <circle cx="340" cy="220" r="15" fill="white" stroke="#ef4444" stroke-width="3"/>
+  <circle cx="340" cy="220" r="6" fill="#ef4444"/>
+</svg>

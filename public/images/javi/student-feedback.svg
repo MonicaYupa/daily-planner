@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bgFeed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fce7f3"/>
+      <stop offset="100%" style="stop-color:#fbcfe8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#bgFeed)" rx="12"/>
+
+  <!-- Speech bubbles with testimonials -->
+  <g transform="translate(50, 50)">
+    <ellipse cx="80" cy="40" rx="70" ry="35" fill="white" stroke="#ec4899" stroke-width="2"/>
+    <polygon points="60,70 50,95 80,72" fill="white" stroke="#ec4899" stroke-width="2"/>
+    <text x="80" y="35" text-anchor="middle" font-family="Arial" font-size="11" fill="#6b7280">"Great workshop!"</text>
+    <text x="80" y="50" text-anchor="middle" font-family="Arial" font-size="11" fill="#6b7280">⭐⭐⭐⭐⭐</text>
+  </g>
+
+  <g transform="translate(200, 80)">
+    <ellipse cx="80" cy="40" rx="75" ry="35" fill="white" stroke="#8b5cf6" stroke-width="2"/>
+    <polygon points="100,70 110,95 80,72" fill="white" stroke="#8b5cf6" stroke-width="2"/>
+    <text x="80" y="35" text-anchor="middle" font-family="Arial" font-size="11" fill="#6b7280">"Learned so much!"</text>
+    <text x="80" y="50" text-anchor="middle" font-family="Arial" font-size="11" fill="#6b7280">⭐⭐⭐⭐⭐</text>
+  </g>
+
+  <g transform="translate(80, 150)">
+    <ellipse cx="80" cy="40" rx="85" ry="35" fill="white" stroke="#3b82f6" stroke-width="2"/>
+    <polygon points="60,70 50,95 80,72" fill="white" stroke="#3b82f6" stroke-width="2"/>
+    <text x="80" y="35" text-anchor="middle" font-family="Arial" font-size="11" fill="#6b7280">"More confident now"</text>
+    <text x="80" y="50" text-anchor="middle" font-family="Arial" font-size="11" fill="#6b7280">⭐⭐⭐⭐⭐</text>
+  </g>
+
+  <!-- 90% badge -->
+  <circle cx="320" cy="200" r="45" fill="#10b981"/>
+  <text x="320" y="195" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="24" fill="white">90%</text>
+  <text x="320" y="215" text-anchor="middle" font-family="Arial" font-size="10" fill="white">SATISFIED</text>
+
+  <!-- People silhouettes -->
+  <g transform="translate(280, 260)">
+    <circle cx="0" cy="0" r="10" fill="#ec4899"/>
+    <ellipse cx="0" cy="18" rx="12" ry="10" fill="#ec4899"/>
+  </g>
+  <g transform="translate(310, 260)">
+    <circle cx="0" cy="0" r="10" fill="#8b5cf6"/>
+    <ellipse cx="0" cy="18" rx="12" ry="10" fill="#8b5cf6"/>
+  </g>
+  <g transform="translate(340, 260)">
+    <circle cx="0" cy="0" r="10" fill="#3b82f6"/>
+    <ellipse cx="0" cy="18" rx="12" ry="10" fill="#3b82f6"/>
+  </g>
+
+  <!-- Hearts -->
+  <path d="M55 250 C55 240, 70 240, 70 250 C70 240, 85 240, 85 250 C85 265, 70 280, 70 280 C70 280, 55 265, 55 250" fill="#ef4444"/>
+</svg>

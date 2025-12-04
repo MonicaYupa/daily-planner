@@ -35,6 +35,24 @@ export interface LearnerProfile {
   academicSkills: AcademicSkill[];
 }
 
+export interface ScheduleItem {
+  time: string;
+  monday: string;
+  tuesday: string;
+  wednesday: string;
+  thursday: string;
+  friday: string;
+  colspan?: number;
+}
+
+export interface CalendarSchedule {
+  phase: number;
+  title: string;
+  description: string;
+  legend: { emoji: string; label: string; color: string }[];
+  schedule: ScheduleItem[];
+}
+
 export interface Learner {
   id: string;
   name: string;
@@ -45,4 +63,5 @@ export interface Learner {
   storyAudio?: string;
   profile: LearnerProfile;
   experiences: Experience[];
+  calendars?: CalendarSchedule[];
 }

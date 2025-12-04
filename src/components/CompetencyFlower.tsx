@@ -10,10 +10,10 @@ interface CompetencyFlowerProps {
 export default function CompetencyFlower({ competencies }: CompetencyFlowerProps) {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
-  const centerX = 150;
-  const centerY = 150;
-  const maxRadius = 100;
-  const minRadius = 30;
+  const centerX = 175;
+  const centerY = 175;
+  const maxRadius = 130;
+  const minRadius = 35;
 
   // Calculate petal path based on level (1-4)
   const getPetalPath = (index: number, level: number, total: number) => {
@@ -75,8 +75,8 @@ export default function CompetencyFlower({ competencies }: CompetencyFlowerProps
 
       <div className="flex flex-col lg:flex-row items-center gap-6">
         {/* Flower SVG */}
-        <div className="relative flex-shrink-0">
-          <svg width="300" height="300" viewBox="0 0 300 300" className="mx-auto">
+        <div className="relative flex-shrink-0 overflow-hidden">
+          <svg width="350" height="350" viewBox="0 0 350 350" className="mx-auto" style={{ overflow: 'visible' }}>
             {/* Background radar circles */}
             {[1, 2, 3, 4].map((level) => (
               <circle
@@ -134,23 +134,27 @@ export default function CompetencyFlower({ competencies }: CompetencyFlowerProps
               strokeWidth="2"
             />
 
-            {/* Level labels on radar */}
-            {[1, 2, 3, 4].map((level) => (
-              <text
-                key={level}
-                x={centerX + 8}
-                y={centerY - (minRadius + ((level / 4) * (maxRadius - minRadius))) + 4}
-                fontSize="10"
-                fill="#94a3b8"
-              >
-                L{level}
-              </text>
-            ))}
+            {/* Level labels on radar - positioned on right side of each circle */}
+            {[1, 2, 3, 4].map((level) => {
+              const radius = minRadius + ((level / 4) * (maxRadius - minRadius));
+              return (
+                <text
+                  key={level}
+                  x={centerX + radius - 12}
+                  y={centerY + 4}
+                  fontSize="10"
+                  fill="#64748b"
+                  textAnchor="middle"
+                >
+                  L{level}
+                </text>
+              );
+            })}
           </svg>
         </div>
 
         {/* Legend / Selected Info */}
-        <div className="flex-1 min-w-0 w-full">
+        <div className="flex-1 min-w-0 w-full relative z-10">
           {selectedCompetency ? (
             <div className="bg-gradient-to-br from-sky-50 to-white rounded-xl p-4 border border-sky-200">
               <div className="flex items-center gap-2 mb-2">
@@ -167,7 +171,7 @@ export default function CompetencyFlower({ competencies }: CompetencyFlowerProps
             </div>
           ) : (
             <div className="space-y-2">
-              <p className="text-xs text-sky-400 mb-3">Click a petal to see details</p>
+              <p className="text-xs text-sky-400 mb-3">Click a competency to see details</p>
               {competencies.map((comp, index) => (
                 <div
                   key={index}
@@ -178,8 +182,8 @@ export default function CompetencyFlower({ competencies }: CompetencyFlowerProps
                     className="w-3 h-3 rounded-full flex-shrink-0"
                     style={{ backgroundColor: comp.color }}
                   />
-                  <span className="text-sky-800 truncate">{comp.name}</span>
-                  <span className="text-sky-500 ml-auto flex-shrink-0">L{comp.level}</span>
+                  <span className="text-sky-800">{comp.name}</span>
+                  <span className="text-sky-500 flex-shrink-0">L{comp.level}</span>
                 </div>
               ))}
             </div>

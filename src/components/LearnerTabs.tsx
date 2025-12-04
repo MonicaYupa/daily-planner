@@ -14,15 +14,15 @@ export default function LearnerTabs({
   onSelectLearner,
 }: LearnerTabsProps) {
   return (
-    <div className="flex justify-center gap-2 overflow-x-auto pb-2 scrollbar-hide">
+    <div className="flex gap-2 overflow-x-auto scrollbar-hide">
       {learners.map((learner) => (
         <button
           key={learner.id}
           onClick={() => onSelectLearner(learner.id)}
-          className={`px-6 py-2.5 rounded-full whitespace-nowrap transition-all font-medium ${
+          className={`px-4 py-2 rounded-full whitespace-nowrap transition-all text-sm font-medium ${
             activeLearnerId === learner.id
-              ? 'bg-gradient-to-r from-sky-500 to-cyan-500 text-white'
-              : 'bg-white/70 text-sky-700 hover:bg-white border border-sky-200'
+              ? 'bg-sky-600 text-white'
+              : 'bg-white/80 text-sky-700 hover:bg-white border border-sky-200'
           }`}
         >
           {learner.name}

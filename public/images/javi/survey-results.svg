@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bgSurvey" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fef3c7"/>
+      <stop offset="100%" style="stop-color:#fde68a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#bgSurvey)" rx="12"/>
+
+  <!-- Pie Chart -->
+  <circle cx="120" cy="150" r="70" fill="#e5e7eb"/>
+  <path d="M120 150 L120 80 A70 70 0 0 1 183 115 Z" fill="#3b82f6"/>
+  <path d="M120 150 L183 115 A70 70 0 0 1 170 205 Z" fill="#10b981"/>
+  <path d="M120 150 L170 205 A70 70 0 0 1 70 205 Z" fill="#f59e0b"/>
+  <path d="M120 150 L70 205 A70 70 0 0 1 120 80 Z" fill="#ec4899"/>
+  <circle cx="120" cy="150" r="25" fill="white"/>
+  <text x="120" y="155" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="14" fill="#374151">127</text>
+
+  <!-- Bar chart -->
+  <rect x="230" y="60" width="140" height="180" fill="white" rx="8" stroke="#d97706" stroke-width="2"/>
+
+  <!-- Bars -->
+  <rect x="250" y="180" width="20" height="40" fill="#3b82f6" rx="2"/>
+  <rect x="280" y="140" width="20" height="80" fill="#10b981" rx="2"/>
+  <rect x="310" y="100" width="20" height="120" fill="#f59e0b" rx="2"/>
+  <rect x="340" y="120" width="20" height="100" fill="#ec4899" rx="2"/>
+
+  <!-- Chart labels -->
+  <text x="300" y="85" text-anchor="middle" font-family="Arial" font-size="11" fill="#6b7280">Survey Results</text>
+
+  <!-- Legend -->
+  <rect x="245" y="235" width="10" height="10" fill="#3b82f6" rx="2"/>
+  <rect x="280" y="235" width="10" height="10" fill="#10b981" rx="2"/>
+  <rect x="315" y="235" width="10" height="10" fill="#f59e0b" rx="2"/>
+  <rect x="350" y="235" width="10" height="10" fill="#ec4899" rx="2"/>
+
+  <!-- People icons -->
+  <g transform="translate(50, 250)">
+    <circle cx="0" cy="0" r="8" fill="#6b7280"/>
+    <ellipse cx="0" cy="15" rx="10" ry="8" fill="#6b7280"/>
+  </g>
+  <g transform="translate(75, 250)">
+    <circle cx="0" cy="0" r="8" fill="#6b7280"/>
+    <ellipse cx="0" cy="15" rx="10" ry="8" fill="#6b7280"/>
+  </g>
+  <g transform="translate(100, 250)">
+    <circle cx="0" cy="0" r="8" fill="#6b7280"/>
+    <ellipse cx="0" cy="15" rx="10" ry="8" fill="#6b7280"/>
+  </g>
+
+  <!-- Clipboard -->
+  <rect x="135" y="240" width="50" height="50" fill="white" rx="4" stroke="#d97706" stroke-width="2"/>
+  <rect x="150" y="232" width="20" height="12" fill="#d97706" rx="3"/>
+  <rect x="142" y="252" width="35" height="4" fill="#e5e7eb" rx="2"/>
+  <rect x="142" y="260" width="30" height="4" fill="#e5e7eb" rx="2"/>
+  <rect x="142" y="268" width="25" height="4" fill="#e5e7eb" rx="2"/>
+</svg>

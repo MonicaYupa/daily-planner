@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bgRefl" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fef9c3"/>
+      <stop offset="100%" style="stop-color:#fef08a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#bgRefl)" rx="12"/>
+
+  <!-- Journal/Notebook -->
+  <rect x="80" y="30" width="180" height="240" fill="#fefce8" rx="4" stroke="#ca8a04" stroke-width="3"/>
+  <rect x="80" y="30" width="25" height="240" fill="#ca8a04" rx="4"/>
+
+  <!-- Spiral binding -->
+  <circle cx="92" cy="50" r="6" fill="white" stroke="#a16207" stroke-width="2"/>
+  <circle cx="92" cy="80" r="6" fill="white" stroke="#a16207" stroke-width="2"/>
+  <circle cx="92" cy="110" r="6" fill="white" stroke="#a16207" stroke-width="2"/>
+  <circle cx="92" cy="140" r="6" fill="white" stroke="#a16207" stroke-width="2"/>
+  <circle cx="92" cy="170" r="6" fill="white" stroke="#a16207" stroke-width="2"/>
+  <circle cx="92" cy="200" r="6" fill="white" stroke="#a16207" stroke-width="2"/>
+  <circle cx="92" cy="230" r="6" fill="white" stroke="#a16207" stroke-width="2"/>
+
+  <!-- Journal lines -->
+  <text x="120" y="60" font-family="Georgia" font-style="italic" font-size="12" fill="#ca8a04">Reflection</text>
+  <line x1="120" y1="75" x2="245" y2="75" stroke="#e5e7eb" stroke-width="1"/>
+  <line x1="120" y1="95" x2="245" y2="95" stroke="#e5e7eb" stroke-width="1"/>
+  <line x1="120" y1="115" x2="245" y2="115" stroke="#e5e7eb" stroke-width="1"/>
+  <line x1="120" y1="135" x2="245" y2="135" stroke="#e5e7eb" stroke-width="1"/>
+  <line x1="120" y1="155" x2="245" y2="155" stroke="#e5e7eb" stroke-width="1"/>
+  <line x1="120" y1="175" x2="245" y2="175" stroke="#e5e7eb" stroke-width="1"/>
+  <line x1="120" y1="195" x2="245" y2="195" stroke="#e5e7eb" stroke-width="1"/>
+  <line x1="120" y1="215" x2="245" y2="215" stroke="#e5e7eb" stroke-width="1"/>
+  <line x1="120" y1="235" x2="245" y2="235" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- Handwritten text simulation -->
+  <path d="M120 85 Q140 80, 160 85 Q180 90, 200 85" stroke="#6b7280" stroke-width="1.5" fill="none"/>
+  <path d="M120 105 Q150 100, 180 105 Q210 110, 230 105" stroke="#6b7280" stroke-width="1.5" fill="none"/>
+  <path d="M120 125 Q135 120, 155 125 Q175 130, 190 125" stroke="#6b7280" stroke-width="1.5" fill="none"/>
+
+  <!-- Thought bubble -->
+  <ellipse cx="320" cy="100" rx="55" ry="45" fill="white" stroke="#8b5cf6" stroke-width="2"/>
+  <circle cx="280" cy="155" r="10" fill="white" stroke="#8b5cf6" stroke-width="2"/>
+  <circle cx="265" cy="175" r="6" fill="white" stroke="#8b5cf6" stroke-width="2"/>
+
+  <!-- Growth icon inside thought -->
+  <path d="M300 120 L300 80" stroke="#10b981" stroke-width="4" stroke-linecap="round"/>
+  <polygon points="300,70 290,85 310,85" fill="#10b981"/>
+  <text x="320" y="115" font-family="Arial" font-size="20">📈</text>
+
+  <!-- Pen -->
+  <g transform="translate(280, 200) rotate(30)">
+    <rect x="0" y="0" width="70" height="10" fill="#3b82f6" rx="2"/>
+    <polygon points="70,0 80,5 70,10" fill="#1e3a8a"/>
+    <rect x="0" y="0" width="12" height="10" fill="#1e3a8a" rx="2"/>
+  </g>
+
+  <!-- Star highlights -->
+  <polygon points="55,60 58,70 68,70 60,76 63,86 55,80 47,86 50,76 42,70 52,70" fill="#fbbf24"/>
+</svg>

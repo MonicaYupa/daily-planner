@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bgCurr" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d1fae5"/>
+      <stop offset="100%" style="stop-color:#a7f3d0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#bgCurr)" rx="12"/>
+
+  <!-- Open Book -->
+  <path d="M200 70 Q120 80 80 100 L80 230 Q140 210 200 220 Q260 210 320 230 L320 100 Q280 80 200 70" fill="white" stroke="#10b981" stroke-width="3"/>
+  <line x1="200" y1="70" x2="200" y2="220" stroke="#10b981" stroke-width="2"/>
+
+  <!-- Left page lines -->
+  <rect x="95" y="110" width="90" height="5" fill="#d1fae5" rx="2"/>
+  <rect x="95" y="125" width="80" height="5" fill="#d1fae5" rx="2"/>
+  <rect x="95" y="140" width="85" height="5" fill="#d1fae5" rx="2"/>
+  <rect x="95" y="160" width="70" height="5" fill="#10b981" rx="2"/>
+  <rect x="95" y="175" width="90" height="5" fill="#d1fae5" rx="2"/>
+  <rect x="95" y="190" width="75" height="5" fill="#d1fae5" rx="2"/>
+
+  <!-- Right page lines -->
+  <rect x="215" y="110" width="90" height="5" fill="#d1fae5" rx="2"/>
+  <rect x="215" y="125" width="80" height="5" fill="#d1fae5" rx="2"/>
+  <rect x="215" y="140" width="85" height="5" fill="#d1fae5" rx="2"/>
+  <rect x="215" y="160" width="70" height="5" fill="#10b981" rx="2"/>
+  <rect x="215" y="175" width="90" height="5" fill="#d1fae5" rx="2"/>
+  <rect x="215" y="190" width="75" height="5" fill="#d1fae5" rx="2"/>
+
+  <!-- Week tabs -->
+  <g transform="translate(330, 90)">
+    <rect x="0" y="0" width="50" height="25" fill="#10b981" rx="4"/>
+    <text x="25" y="17" text-anchor="middle" font-family="Arial" font-size="10" fill="white" font-weight="bold">WK 1</text>
+  </g>
+  <g transform="translate(330, 120)">
+    <rect x="0" y="0" width="50" height="25" fill="#34d399" rx="4"/>
+    <text x="25" y="17" text-anchor="middle" font-family="Arial" font-size="10" fill="white" font-weight="bold">WK 2</text>
+  </g>
+  <g transform="translate(330, 150)">
+    <rect x="0" y="0" width="50" height="25" fill="#6ee7b7" rx="4"/>
+    <text x="25" y="17" text-anchor="middle" font-family="Arial" font-size="10" fill="#065f46" font-weight="bold">WK 3</text>
+  </g>
+  <g transform="translate(330, 180)">
+    <rect x="0" y="0" width="50" height="25" fill="#a7f3d0" rx="4"/>
+    <text x="25" y="17" text-anchor="middle" font-family="Arial" font-size="10" fill="#065f46" font-weight="bold">WK 4</text>
+  </g>
+
+  <!-- Pencil -->
+  <g transform="translate(40, 180) rotate(-45)">
+    <rect x="0" y="0" width="80" height="14" fill="#fbbf24" rx="2"/>
+    <polygon points="80,0 95,7 80,14" fill="#fcd34d"/>
+    <polygon points="95,7 100,7 95,4 95,10" fill="#1e293b"/>
+    <rect x="0" y="0" width="15" height="14" fill="#f472b6" rx="2"/>
+  </g>
+
+  <!-- Checkmark badge -->
+  <circle cx="60" cy="80" r="25" fill="#10b981"/>
+  <path d="M48 80 L56 88 L72 70" stroke="white" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

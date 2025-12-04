@@ -108,11 +108,13 @@ Javi is still very much in his own Experiencing phase—testing himself in a dem
             id: 'javi-ev-1-1',
             title: 'Project Proposal',
             description: 'Initial proposal document outlining goals, timeline, and resource requirements',
+            image: '/images/javi/project-proposal.svg',
           },
           {
             id: 'javi-ev-1-2',
             title: 'Community Survey Results',
             description: 'Analysis of 127 survey responses from neighborhood residents',
+            image: '/images/javi/survey-results.svg',
           },
           {
             id: 'javi-ev-1-3',
@@ -135,16 +137,19 @@ Javi is still very much in his own Experiencing phase—testing himself in a dem
             id: 'javi-ev-2-1',
             title: 'Curriculum Guide',
             description: 'Complete lesson plans and learning objectives for all 6 sessions',
+            image: '/images/javi/curriculum-guide.svg',
           },
           {
             id: 'javi-ev-2-2',
             title: 'Student Feedback',
             description: 'Anonymous survey results and testimonials from participants',
+            image: '/images/javi/student-feedback.svg',
           },
           {
             id: 'javi-ev-2-3',
             title: 'Workshop Materials',
             description: 'Jupyter notebooks and practice exercises created for students',
+            image: '/images/javi/workshop-materials.svg',
           },
         ],
       },
@@ -161,6 +166,7 @@ Javi is still very much in his own Experiencing phase—testing himself in a dem
             id: 'javi-ev-3-1',
             title: 'Internship Reflection',
             description: 'Written reflection on professional growth and key learnings',
+            image: '/images/javi/internship-reflection.svg',
           },
           {
             id: 'javi-ev-3-2',
@@ -172,202 +178,250 @@ Javi is still very much in his own Experiencing phase—testing himself in a dem
             id: 'javi-ev-3-3',
             title: 'Supervisor Evaluation',
             description: 'Performance review and letter of recommendation from supervisor',
+            image: '/images/javi/supervisor-evaluation.svg',
           },
+        ],
+      },
+    ],
+    calendars: [
+      {
+        phase: 3,
+        title: 'Phase 3 – Experiencing',
+        description: 'A typical Phase 3 week while Javi is dual-enrolled in college courses, embedded in the local public works department, and supported by the Waves Prep homebase.',
+        legend: [
+          { emoji: '🏠', label: 'Waves Homebase', color: '#e0f2fe' },
+          { emoji: '🎓', label: 'Dual-Enrollment College', color: '#dbeafe' },
+          { emoji: '🏗️', label: 'Public Works Internship', color: '#fee2e2' },
+          { emoji: '🧠', label: 'Reflection & Mentoring', color: '#e9d5ff' },
+        ],
+        schedule: [
+          { time: '8:30–9:00', monday: '🏠 Arrival at Waves homebase & check-in', tuesday: '🏠 Arrival & quiet prep time', wednesday: '🏠 Arrival & check-in', thursday: '🏠 Arrival & quiet prep time', friday: '🏠 Community stand-up (dual-enrolled cohort)' },
+          { time: '9:00–10:30', monday: '🎓 Live online Calculus II lecture', tuesday: '🎓 Asynchronous college coursework', wednesday: '🎓 College seminar (Intro Engineering)', thursday: '🎓 Asynchronous coursework & office hours', friday: '🎓 Weekly planning block' },
+          { time: '10:30–11:00', monday: '🧠 Cohort stand-up: "What clicked? What\'s fuzzy?"', tuesday: '🧠 Short reflection & questions list', wednesday: '🧠 Cohort huddle: connecting work to real-world', thursday: '🧠 Reflection log (competency grid update)', friday: '🧠 Dual-enrollment coach check-in' },
+          { time: '11:00–12:30', monday: '🏠 Independent study & assignments', tuesday: '🏠 Project work: build portfolio artifacts', wednesday: '🏠 Study group with dual-enrolled peers', thursday: '🏠 Independent study (math focus)', friday: '🏠 Portfolio maintenance & documentation' },
+          { time: '12:30–1:15', monday: 'Lunch & informal peer support', tuesday: '', wednesday: '', thursday: '', friday: '', colspan: 5 },
+          { time: '1:15–4:15', monday: '🏗️ Public works – field visits & data collection', tuesday: '🏠 Deep work block: college projects', wednesday: '🏗️ Internship – team meetings & modeling', thursday: '🏗️ Internship – analysis & drafting memos', friday: '🏠 Open flex block (catch-up or rest)' },
+          { time: '4:15–5:00', monday: '🧠 Quick daily reflection (evidence added)', tuesday: 'Travel / home', wednesday: 'Travel / home', thursday: 'Travel / home', friday: '🧠 Weekly 1:1 with Waves mentor (Mr. Lee)' },
+        ],
+      },
+      {
+        phase: 4,
+        title: 'After Waves – Cornell First Year',
+        description: 'A representative week as Javi begins at Cornell\'s Engineering School while staying connected to Waves Prep for support and serving as a near-peer mentor.',
+        legend: [
+          { emoji: '🎓', label: 'Cornell Coursework', color: '#dbeafe' },
+          { emoji: '📚', label: 'Study & Project Work', color: '#dcfce7' },
+          { emoji: '🧠', label: 'Waves Alumni Support', color: '#e9d5ff' },
+          { emoji: '🤝', label: 'Mentoring Phase 1 Students', color: '#fef3c7' },
+        ],
+        schedule: [
+          { time: '8:30–10:00', monday: '🎓 Calculus III lecture', tuesday: '🎓 Physics (Mechanics) lecture', wednesday: '🎓 Calculus III recitation', thursday: '🎓 Physics discussion section', friday: '🎓 Intro to Engineering seminar' },
+          { time: '10:15–12:00', monday: '📚 Study block (problem sets)', tuesday: '📚 Library work session', wednesday: '📚 Lab prep / notes review', thursday: '📚 Group project meeting', friday: '📚 Open study / office hours' },
+          { time: '12:00–1:00', monday: 'Lunch & informal time with peers', tuesday: '', wednesday: '', thursday: '', friday: '', colspan: 5 },
+          { time: '1:00–3:00', monday: '🎓 Physics lab', tuesday: '🎓 Computing / programming lab', wednesday: '📚 Project work (design studio)', thursday: '🎓 Engineering seminar / workshop', friday: '📚 Catch-up work or rest' },
+          { time: '3:00–4:00', monday: '📚 Individual study or tutoring center', tuesday: '📚 Study group (shared problem sets)', wednesday: '📚 Library deep work block', thursday: '📚 Planning & organizing next week', friday: 'Free / campus activities' },
+          { time: '4:00–5:00', monday: '🧠 Waves alumni small-group check-in (virtual)', tuesday: 'Independent time', wednesday: 'Independent time', thursday: 'Independent time', friday: 'Independent time' },
+          { time: '7:00–8:00 (Tue)', monday: 'Evening study', tuesday: '🤝 Volunteer mentoring with Waves Phase 1 students', wednesday: 'Evening study', thursday: 'Evening study', friday: 'Evening social / clubs' },
         ],
       },
     ],
   },
   {
-    id: 'maya',
-    name: 'Maya',
-    phase: 2,
-    photo: '/photos/maya.jpg',
+    id: 'amaya',
+    name: 'Amaya',
+    phase: 3,
+    photo: '/images/amaya/headshot.png',
     professionalInterests: [
-      'Environmental Science',
-      'Renewable Energy',
-      'Science Communication',
-      'Field Research',
+      'Culinary Arts',
+      'Food Business',
+      'Entrepreneurship',
+      'Community Service',
     ],
+    storyAudio: '/audio/amaya-story.mp3',
+    story: `I'm Amaya, a Waves Prep grad in Phase 3. I'm working and saving to start a food truck.
+
+I came into Waves not thinking I was "school smart." I loved cooking and figured I'd end up working in retail or at a fast-food restaurant eventually. During a food project, I became the person classmates relied on in the kitchen. In reflections, my mentor said, "This is creativity, adaptability, responsibility," and I started to see those as my strengths.
+
+In Phase 2, I worked at a neighborhood bakery. I expected to just bake, but I also learned costs, schedules, and what it takes to keep a business open. It was like seeing the backstage of a show. My competency map showed big strengths in creativity and personal responsibility. That's when I really locked onto food as my path. I decided that in my Phase 3, I wanted to prepare to run my own food business.
+
+My Phase 3 was built around a local food truck and a business plan for launching my own. I cooked, worked the line and the window, and saw up close how a business survives. I kept asking, "Do I still want this after seeing the hard parts?" The answer stayed yes.
+
+And I'm already in the food world, saving for my truck and mentoring younger Waves learners.
+
+If I'd done a regular high school schedule, I might never have realized food work could be a serious path.
+
+Waves Prep gave us phases, real experiences, and space to decide who we're becoming and what work we want to do in the world.`,
     profile: {
       competencies: [
         {
           name: 'Knowing How to Learn',
           level: 3,
-          description: 'Takes ownership of learning process and actively seeks feedback for improvement.',
+          description: 'Discovered learning through hands-on experiences. Reflects on growth and applies feedback from mentors.',
           color: '#f97316',
         },
         {
           name: 'Personal Qualities',
-          level: 3,
-          description: 'Shows resilience and adaptability when facing challenges in research.',
-          color: '#ec4899',
-        },
-        {
-          name: 'Social Reasoning',
-          level: 2,
-          description: 'Recognizes different perspectives on environmental and social issues.',
-          color: '#eab308',
-        },
-        {
-          name: 'Quantitative Reasoning',
-          level: 3,
-          description: 'Applies statistical methods to analyze scientific data effectively.',
-          color: '#14b8a6',
-        },
-        {
-          name: 'Communication',
-          level: 3,
-          description: 'Explains complex scientific concepts clearly to diverse audiences.',
-          color: '#3b82f6',
-        },
-        {
-          name: 'Empirical Reasoning',
           level: 4,
-          description: 'Designs rigorous experiments and draws well-supported conclusions from data.',
-          color: '#8b5cf6',
-        },
-      ],
-      academicSkills: [
-        { name: 'Lab Techniques', level: 4, description: 'Proficiently conducts experiments following proper protocols and safety procedures.' },
-        { name: 'Statistical Analysis', level: 3, description: 'Uses statistical tools to analyze and interpret scientific data.' },
-        { name: 'Scientific Writing', level: 3, description: 'Writes clear lab reports and research summaries.' },
-        { name: 'Presentation Skills', level: 2, description: 'Presents findings to small groups with visual aids.' },
-      ],
-    },
-    experiences: [
-      {
-        id: 'maya-exp-1',
-        number: 1,
-        title: 'River Water Quality Study',
-        phase: 1,
-        overview:
-          'Conducted a semester-long study of water quality in the local river system. Collected weekly samples from 5 sites, tested for pH, dissolved oxygen, and pollutants. Presented findings to the Environmental Club and created an infographic for community awareness.',
-        evidence: [
-          {
-            id: 'maya-ev-1-1',
-            title: 'Data Collection Log',
-            description: 'Detailed records of all water samples and testing procedures',
-          },
-          {
-            id: 'maya-ev-1-2',
-            title: 'Analysis Report',
-            description: 'Statistical analysis of water quality trends over the semester',
-          },
-          {
-            id: 'maya-ev-1-3',
-            title: 'Community Infographic',
-            description: 'Visual summary created for public awareness campaign',
-          },
-        ],
-      },
-      {
-        id: 'maya-exp-2',
-        number: 2,
-        title: 'Solar Panel Efficiency Research',
-        phase: 2,
-        overview:
-          'Partnered with the school facilities team to analyze solar panel performance on campus buildings. Developed a monitoring system to track energy output and identify factors affecting efficiency. Research contributed to a proposal for expanding solar installations.',
-        evidence: [
-          {
-            id: 'maya-ev-2-1',
-            title: 'Research Methodology',
-            description: 'Documentation of experimental design and data collection approach',
-          },
-          {
-            id: 'maya-ev-2-2',
-            title: 'Performance Dashboard',
-            description: 'Real-time monitoring interface built to track panel output',
-          },
-          {
-            id: 'maya-ev-2-3',
-            title: 'Expansion Proposal',
-            description: 'Recommendations for additional solar installations based on findings',
-          },
-        ],
-      },
-    ],
-  },
-  {
-    id: 'omar',
-    name: 'Omar',
-    phase: 1,
-    photo: '/photos/omar.jpg',
-    professionalInterests: [
-      'Game Development',
-      'User Experience Design',
-      'Digital Art',
-      'Storytelling',
-    ],
-    profile: {
-      competencies: [
-        {
-          name: 'Knowing How to Learn',
-          level: 2,
-          description: 'Beginning to identify personal learning strategies and set goals.',
-          color: '#f97316',
-        },
-        {
-          name: 'Personal Qualities',
-          level: 2,
-          description: 'Developing self-awareness and openness to feedback.',
+          description: 'Demonstrates strong personal responsibility, adaptability, and resilience. Takes ownership of goals.',
           color: '#ec4899',
         },
         {
           name: 'Social Reasoning',
-          level: 2,
-          description: 'Considers how games and media impact different communities.',
+          level: 3,
+          description: 'Understands community needs and builds relationships with customers and mentors.',
           color: '#eab308',
         },
         {
           name: 'Quantitative Reasoning',
-          level: 2,
-          description: 'Applies basic math concepts in game mechanics and scoring systems.',
+          level: 3,
+          description: 'Applies math to business operations: costs, pricing, inventory, and financial planning.',
           color: '#14b8a6',
         },
         {
           name: 'Communication',
           level: 3,
-          description: 'Expresses creative ideas clearly through multiple media formats.',
+          description: 'Connects authentically with customers and presents business ideas clearly.',
           color: '#3b82f6',
         },
         {
           name: 'Empirical Reasoning',
-          level: 2,
-          description: 'Tests game designs through user feedback and iterates based on results.',
+          level: 3,
+          description: 'Tests recipes, gathers customer feedback, and iterates based on real-world results.',
           color: '#8b5cf6',
         },
       ],
       academicSkills: [
-        { name: 'Programming Fundamentals', level: 2, description: 'Writes basic code using block-based and introductory text languages.' },
-        { name: 'Visual Design', level: 3, description: 'Creates appealing graphics and user interfaces.' },
-        { name: 'Prototyping', level: 2, description: 'Builds quick mockups to test ideas.' },
-        { name: 'User Testing', level: 2, description: 'Gathers and incorporates user feedback into designs.' },
+        { name: 'Business Planning', level: 4, description: 'Developed comprehensive food truck business plan with financial projections.' },
+        { name: 'Food Safety & Operations', level: 4, description: 'Certified in food handling with hands-on kitchen and service experience.' },
+        { name: 'Financial Literacy', level: 3, description: 'Understands costs, margins, scheduling, and what it takes to keep a business running.' },
+        { name: 'Customer Service', level: 4, description: 'Builds genuine connections with customers and responds to feedback.' },
       ],
     },
     experiences: [
       {
-        id: 'omar-exp-1',
+        id: 'amaya-exp-1',
         number: 1,
-        title: 'Educational Game Prototype',
+        title: 'Waves Prep Kitchen Leadership',
         phase: 1,
+        image: '/images/amaya/waves-kitchen.png',
         overview:
-          'Designed and developed a prototype for an educational game teaching basic algebra concepts. Used Scratch to create interactive puzzles and conducted user testing with 10 middle school students. Iteratively improved the game based on player feedback and learning outcomes.',
+          'During a collaborative food project at Waves Prep, I became the person classmates relied on in the kitchen. I discovered that cooking wasn\'t just something I enjoyed—it was where I showed creativity, adaptability, and responsibility. My mentor helped me see these as real strengths, not just hobbies.',
         evidence: [
           {
-            id: 'omar-ev-1-1',
-            title: 'Game Design Document',
-            description: 'Initial concept, mechanics, and learning objectives outline',
+            id: 'amaya-ev-1-1',
+            title: 'Kitchen Leadership',
+            description: 'Led food preparation and coordinated with team members during collaborative cooking projects',
+            image: '/images/amaya/waves-kitchen.png',
           },
           {
-            id: 'omar-ev-1-2',
-            title: 'User Testing Notes',
-            description: 'Observations and feedback from playtesting sessions',
+            id: 'amaya-ev-1-2',
+            title: 'Mentor Feedback',
+            description: 'Reflections documenting growth in creativity, adaptability, and personal responsibility',
+            image: '/images/amaya/mentor-feedback.svg',
           },
           {
-            id: 'omar-ev-1-3',
-            title: 'Final Game Link',
-            description: 'Playable Scratch project demonstrating completed prototype',
+            id: 'amaya-ev-1-3',
+            title: 'Food Sales at Waves',
+            description: 'Organized and ran food sales events for the Waves Prep community',
+            image: '/images/amaya/selling-food-waves.png',
           },
+        ],
+      },
+      {
+        id: 'amaya-exp-2',
+        number: 2,
+        title: 'Neighborhood Bakery Apprenticeship',
+        phase: 2,
+        image: '/images/amaya/sba-workshop.png',
+        overview:
+          'Worked at a neighborhood bakery where I learned far more than baking. I discovered the business side: costs, schedules, inventory, and what it really takes to keep a food business open. It was like seeing the backstage of a show. This experience confirmed food as my path.',
+        evidence: [
+          {
+            id: 'amaya-ev-2-1',
+            title: 'Business Operations Learning',
+            description: 'Documentation of lessons learned about costs, scheduling, and business sustainability',
+            image: '/images/amaya/business-operations.svg',
+          },
+          {
+            id: 'amaya-ev-2-2',
+            title: 'SBA Workshop Attendance',
+            description: 'Attended Small Business Administration workshop to learn entrepreneurship fundamentals',
+            image: '/images/amaya/sba-workshop.png',
+          },
+          {
+            id: 'amaya-ev-2-3',
+            title: 'Competency Growth',
+            description: 'Competency map showing big strengths in creativity and personal responsibility',
+            image: '/images/amaya/competency-growth.svg',
+          },
+        ],
+      },
+      {
+        id: 'amaya-exp-3',
+        number: 3,
+        title: 'La Ola Food Truck Internship',
+        phase: 3,
+        image: '/images/amaya/working-la-ola.png',
+        overview:
+          'My Phase 3 capstone was built around La Ola Street Kitchen food truck. I cooked, worked the line and the window, and saw up close how a food business survives day-to-day. I kept asking myself, "Do I still want this after seeing the hard parts?" The answer stayed yes.',
+        evidence: [
+          {
+            id: 'amaya-ev-3-1',
+            title: 'Line & Window Work',
+            description: 'Hands-on experience cooking, preparing orders, and serving customers at the food truck',
+            image: '/images/amaya/working-la-ola.png',
+          },
+          {
+            id: 'amaya-ev-3-2',
+            title: 'Food Truck Operations',
+            description: 'Learning the full operation of La Ola Street Kitchen food truck',
+            image: '/images/amaya/food-truck.png',
+          },
+          {
+            id: 'amaya-ev-3-3',
+            title: 'Business Plan Presentation',
+            description: 'Presented comprehensive business plan for launching my own food truck',
+            image: '/images/amaya/business-plan-presentation.png',
+          },
+        ],
+      },
+    ],
+    calendars: [
+      {
+        phase: 2,
+        title: 'Phase 2 – Exploration',
+        description: 'A typical week while Amaya is apprenticing at a neighborhood bakery and developing her first serious food-business project.',
+        legend: [
+          { emoji: '🏫', label: 'Waves Homebase', color: '#e0f2fe' },
+          { emoji: '🥐', label: 'Bakery Placement', color: '#fee2e2' },
+          { emoji: '🧠', label: 'Project & Reflection', color: '#dcfce7' },
+        ],
+        schedule: [
+          { time: '8:00–9:00', monday: '🏫 Arrival & advisory check-in', tuesday: '🏫 Arrival & planning block', wednesday: '🏫 Arrival & advisory check-in', thursday: '🏫 Arrival & planning block', friday: '🏫 Whole-cohort meeting' },
+          { time: '9:00–10:30', monday: '🏫 Core seminar (literacy, bakery theme)', tuesday: '🏫 Math workshop (costs, percentages)', wednesday: '🏫 Core seminar (science of food systems)', thursday: '🏫 Quant lab (pricing exercises)', friday: '🧠 Reflection circle (what worked/didn\'t)' },
+          { time: '10:45–12:00', monday: '🧠 Project studio – inquiry questions', tuesday: '🧠 Project studio – data collection plan', wednesday: '🧠 Project studio – analyze bakery data', thursday: '🧠 Project studio – visuals & story', friday: '🧠 Portfolio updates & evidence' },
+          { time: '12:00–1:00', monday: 'Lunch & social time', tuesday: '', wednesday: '', thursday: '', friday: '', colspan: 5 },
+          { time: '1:00–4:00', monday: '🥐 Bakery – front-of-house & kitchen basics', tuesday: '🥐 Bakery – back-of-house operations', wednesday: '🥐 Bakery – observe owner\'s meetings', thursday: '🥐 Bakery – experiment with product idea', friday: '🧠 Independent work & 1:1 mentor check-in' },
+          { time: '4:00–4:30', monday: '🧠 Quick mentor debrief (key learnings)', tuesday: 'Travel / home', wednesday: '🧠 Journal reflection', thursday: 'Travel / home', friday: 'Plan priorities for next week' },
+        ],
+      },
+      {
+        phase: 3,
+        title: 'Phase 3 – Experiencing',
+        description: 'A typical week as Amaya works with La Ola Street Kitchen, runs a small meal venture at the Waves hub, and builds her food truck business plan with the SBA.',
+        legend: [
+          { emoji: '🍳', label: 'Waves Hub Kitchen', color: '#fef9c3' },
+          { emoji: '🚚', label: 'La Ola Street Kitchen', color: '#fee2e2' },
+          { emoji: '🧾', label: 'SBA & Business Plan', color: '#e0f2fe' },
+          { emoji: '🧠', label: 'Mentoring & Reflection', color: '#e9d5ff' },
+        ],
+        schedule: [
+          { time: '6:30–8:00', monday: '🍳 Prep breakfast at Waves hub (menu testing)', tuesday: '🍳 Prep breakfast at Waves hub', wednesday: '🍳 Prep breakfast at Waves hub', thursday: '🍳 Prep breakfast at Waves hub', friday: '🍳 Prep & pack meals for Waves families' },
+          { time: '8:00–9:00', monday: 'Serve, clean up, log costs & sales', tuesday: 'Serve, clean up, log notes', wednesday: 'Serve, clean up, log notes', thursday: 'Serve, clean up, log notes', friday: 'Serve, clean up, update weekly numbers' },
+          { time: '9:30–2:00', monday: '🚚 La Ola – line cook & prep', tuesday: '🚚 La Ola – order window & feedback', wednesday: '🚚 La Ola – line cook & test a special', thursday: '🚚 La Ola – social media & promo', friday: '🚚 La Ola – mixed role as needed' },
+          { time: '2:00–3:00', monday: 'Break & travel', tuesday: 'Break & travel', wednesday: 'Break & travel', thursday: 'Break & travel', friday: 'Break & travel' },
+          { time: '3:00–4:30', monday: '🧾 SBA workshop (licensing, permits, costs)', tuesday: '🧾 Work session – update business plan', wednesday: '🧾 SBA office hours / advising', thursday: '🧾 Modeling (pricing, margins, savings)', friday: '🧠 Portfolio & reflection with mentor' },
+          { time: '4:30–5:00', monday: '🧠 Short reflection log (do I still want this?)', tuesday: 'Independent study / rest', wednesday: 'Independent study / rest', thursday: 'Independent study / rest', friday: 'Next-week planning & goal-setting' },
         ],
       },
     ],

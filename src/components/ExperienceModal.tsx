@@ -35,12 +35,12 @@ export default function ExperienceDetail({ experience, onClose }: ExperienceDeta
       {/* Content */}
       <div className="max-w-4xl mx-auto px-4 py-8">
         {/* Hero Image */}
-        <div className="h-64 md:h-80 bg-gradient-to-br from-sky-100 to-cyan-100 rounded-2xl flex items-center justify-center mb-8 overflow-hidden">
+        <div className={`h-64 md:h-80 rounded-2xl mb-8 overflow-hidden ${experience.image ? '' : 'bg-gradient-to-br from-sky-100 to-cyan-100 flex items-center justify-center'}`}>
           {experience.image ? (
             <img
               src={experience.image}
               alt={experience.title}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-top"
             />
           ) : (
             <svg

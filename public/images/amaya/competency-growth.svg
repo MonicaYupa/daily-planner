@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fce7f3"/>
+      <stop offset="100%" style="stop-color:#fbcfe8"/>
+    </linearGradient>
+    <linearGradient id="petalGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f97316"/>
+      <stop offset="100%" style="stop-color:#fb923c"/>
+    </linearGradient>
+    <linearGradient id="petalGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ec4899"/>
+      <stop offset="100%" style="stop-color:#f472b6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#bgGrad3)" rx="12"/>
+
+  <!-- Competency Flower (simplified) -->
+  <g transform="translate(120, 150)">
+    <!-- Petals -->
+    <ellipse cx="0" cy="-50" rx="15" ry="45" fill="#f97316" opacity="0.9"/>
+    <ellipse cx="47" cy="-15" rx="15" ry="45" fill="#ec4899" opacity="0.9" transform="rotate(72)"/>
+    <ellipse cx="29" cy="40" rx="15" ry="45" fill="#eab308" opacity="0.9" transform="rotate(144)"/>
+    <ellipse cx="-29" cy="40" rx="15" ry="45" fill="#14b8a6" opacity="0.9" transform="rotate(216)"/>
+    <ellipse cx="-47" cy="-15" rx="15" ry="45" fill="#3b82f6" opacity="0.9" transform="rotate(288)"/>
+    <!-- Center -->
+    <circle cx="0" cy="0" r="20" fill="white" stroke="#ec4899" stroke-width="3"/>
+  </g>
+
+  <!-- Growth Arrow -->
+  <path d="M200 220 L200 100" stroke="#10b981" stroke-width="8" stroke-linecap="round"/>
+  <polygon points="200,70 180,110 220,110" fill="#10b981"/>
+
+  <!-- Stars showing progression -->
+  <g fill="#f59e0b">
+    <polygon points="280,200 283,210 294,210 285,217 288,228 280,221 272,228 275,217 266,210 277,210" opacity="0.4"/>
+    <polygon points="310,160 314,173 328,173 317,182 321,195 310,186 299,195 303,182 292,173 306,173" opacity="0.7"/>
+    <polygon points="340,110 345,127 363,127 349,138 354,155 340,144 326,155 331,138 317,127 335,127"/>
+  </g>
+
+  <!-- Level indicators -->
+  <g transform="translate(250, 230)">
+    <rect x="0" y="0" width="120" height="50" fill="white" rx="8" stroke="#ec4899" stroke-width="2"/>
+    <text x="60" y="20" text-anchor="middle" font-family="Arial" font-size="12" fill="#6b7280">Creativity</text>
+    <rect x="10" y="30" width="100" height="10" fill="#e5e7eb" rx="5"/>
+    <rect x="10" y="30" width="90" height="10" fill="#ec4899" rx="5"/>
+    <text x="105" y="38" font-family="Arial" font-size="8" fill="white" font-weight="bold">L4</text>
+  </g>
+
+  <!-- Badge -->
+  <circle cx="350" cy="60" r="30" fill="#10b981"/>
+  <text x="350" y="55" text-anchor="middle" font-family="Arial" font-size="12" fill="white">TOP</text>
+  <text x="350" y="70" text-anchor="middle" font-family="Arial" font-size="10" fill="white">STRENGTH</text>
+</svg>

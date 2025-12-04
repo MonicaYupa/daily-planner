@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bgWork" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e0e7ff"/>
+      <stop offset="100%" style="stop-color:#c7d2fe"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#bgWork)" rx="12"/>
+
+  <!-- Jupyter Notebook icon -->
+  <rect x="60" y="40" width="140" height="180" fill="white" rx="8" stroke="#f97316" stroke-width="3"/>
+
+  <!-- Jupyter logo -->
+  <circle cx="130" cy="70" r="20" fill="#f97316"/>
+  <circle cx="120" cy="65" r="4" fill="white"/>
+  <circle cx="140" cy="65" r="4" fill="white"/>
+  <circle cx="130" cy="80" r="4" fill="white"/>
+
+  <!-- Code cells -->
+  <rect x="70" y="100" width="120" height="30" fill="#f3f4f6" rx="4" stroke="#d1d5db" stroke-width="1"/>
+  <text x="78" y="118" font-family="monospace" font-size="10" fill="#6366f1">In [1]:</text>
+  <text x="78" y="128" font-family="monospace" font-size="8" fill="#374151">import pandas</text>
+
+  <rect x="70" y="140" width="120" height="30" fill="#f3f4f6" rx="4" stroke="#d1d5db" stroke-width="1"/>
+  <text x="78" y="158" font-family="monospace" font-size="10" fill="#6366f1">In [2]:</text>
+  <text x="78" y="168" font-family="monospace" font-size="8" fill="#374151">df.head()</text>
+
+  <rect x="70" y="180" width="120" height="25" fill="#ecfdf5" rx="4" stroke="#10b981" stroke-width="1"/>
+  <text x="78" y="196" font-family="monospace" font-size="8" fill="#10b981">✓ Output</text>
+
+  <!-- Python logo -->
+  <g transform="translate(250, 60)">
+    <rect x="0" y="0" width="100" height="80" fill="white" rx="8" stroke="#3b82f6" stroke-width="2"/>
+    <path d="M50 15 C35 15, 25 25, 25 40 L25 50 L50 50 L50 55 L20 55 L20 40 C20 20, 35 10, 50 10 C65 10, 80 20, 80 40 L80 55 L55 55 L55 50 L75 50 L75 40 C75 25, 65 15, 50 15" fill="#3776ab"/>
+    <circle cx="38" cy="28" r="4" fill="white"/>
+    <path d="M50 65 C65 65, 75 55, 75 40 L75 30 L50 30 L50 25 L80 25 L80 40 C80 60, 65 70, 50 70 C35 70, 20 60, 20 40 L20 25 L45 25 L45 30 L25 30 L25 40 C25 55, 35 65, 50 65" fill="#ffd43b"/>
+    <circle cx="62" cy="52" r="4" fill="white"/>
+  </g>
+
+  <!-- Data visualization icon -->
+  <g transform="translate(250, 160)">
+    <rect x="0" y="0" width="100" height="80" fill="white" rx="8" stroke="#10b981" stroke-width="2"/>
+    <polyline points="15,60 35,40 55,50 85,20" stroke="#10b981" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <circle cx="15" cy="60" r="4" fill="#10b981"/>
+    <circle cx="35" cy="40" r="4" fill="#10b981"/>
+    <circle cx="55" cy="50" r="4" fill="#10b981"/>
+    <circle cx="85" cy="20" r="4" fill="#10b981"/>
+  </g>
+
+  <!-- Code bracket decorations -->
+  <text x="30" y="150" font-family="monospace" font-size="60" fill="#6366f1" opacity="0.3">{</text>
+  <text x="360" y="150" font-family="monospace" font-size="60" fill="#6366f1" opacity="0.3">}</text>
+</svg>

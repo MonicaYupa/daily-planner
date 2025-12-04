@@ -12,12 +12,12 @@ export default function ExperienceCard({ experience, onClick }: ExperienceCardPr
       className="wave-card rounded-xl overflow-hidden text-left w-full group"
     >
       {/* Experience Image */}
-      <div className="h-32 bg-gradient-to-br from-sky-100 to-cyan-100 flex items-center justify-center overflow-hidden">
+      <div className={`h-32 overflow-hidden ${experience.image ? '' : 'bg-gradient-to-br from-sky-100 to-cyan-100 flex items-center justify-center'}`}>
         {experience.image ? (
           <img
             src={experience.image}
             alt={experience.title}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-top"
           />
         ) : (
           <svg

@@ -9,9 +9,10 @@ import AcademicSkillsProgress from './AcademicSkillsProgress';
 interface LearnerProfileProps {
   learner: Learner;
   onSelectExperience: (experience: Experience) => void;
+  onShowCalendar?: () => void;
 }
 
-export default function LearnerProfile({ learner, onSelectExperience }: LearnerProfileProps) {
+export default function LearnerProfile({ learner, onSelectExperience, onShowCalendar }: LearnerProfileProps) {
   const [isPlaying, setIsPlaying] = useState(false);
   const [audioElement, setAudioElement] = useState<HTMLAudioElement | null>(null);
 
@@ -90,46 +91,68 @@ export default function LearnerProfile({ learner, onSelectExperience }: LearnerP
           ))}
         </div>
 
-        {/* Day in the Life Audio Button */}
-        {learner.storyAudio && (
-          <button
-            onClick={handlePlayStory}
-            className={`mt-4 inline-flex items-center gap-2 px-4 py-2 rounded-full transition-all ${
-              isPlaying
-                ? 'bg-sky-500 text-white'
-                : 'bg-white/70 text-sky-600 hover:bg-white border border-sky-200'
-            }`}
-          >
-            {isPlaying ? (
-              <>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 10a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1v-4z" />
-                </svg>
-                <span className="text-sm font-medium">Stop</span>
-              </>
-            ) : (
-              <>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
-                </svg>
-                <span className="text-sm font-medium">Day in the Life</span>
-              </>
-            )}
-          </button>
-        )}
+        {/* Action Buttons */}
+        <div className="flex flex-wrap gap-3 justify-center mt-4">
+          {/* Day in the Life Audio Button */}
+          {learner.storyAudio && (
+            <button
+              onClick={handlePlayStory}
+              className={`inline-flex items-center gap-2 px-4 py-2 rounded-full transition-all ${
+                isPlaying
+                  ? 'bg-sky-500 text-white'
+                  : 'bg-white/70 text-sky-600 hover:bg-white border border-sky-200'
+              }`}
+            >
+              {isPlaying ? (
+                <>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 10a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1v-4z" />
+                  </svg>
+                  <span className="text-sm font-medium">Stop</span>
+                </>
+              ) : (
+                <>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+                  </svg>
+                  <span className="text-sm font-medium">Day in the Life</span>
+                </>
+              )}
+            </button>
+          )}
+
+          {/* View Calendar Button */}
+          {learner.calendars && onShowCalendar && (
+            <button
+              onClick={onShowCalendar}
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full transition-all bg-white/70 text-sky-600 hover:bg-white border border-sky-200"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+              <span className="text-sm font-medium">View Calendar</span>
+            </button>
+          )}
+        </div>
       </div>
 
       {/* Experiences */}
