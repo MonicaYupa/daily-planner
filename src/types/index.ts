@@ -15,9 +15,22 @@ export interface Experience {
   evidence: Evidence[];
 }
 
+export interface Competency {
+  name: string;
+  level: number; // 1-4 scale
+  description: string;
+  color: string; // hex color for the petal
+}
+
+export interface AcademicSkill {
+  name: string;
+  level: number; // 1-4 scale
+  description: string;
+}
+
 export interface LearnerProfile {
-  competencies: string[];
-  academicSkills: string[];
+  competencies: Competency[];
+  academicSkills: AcademicSkill[];
 }
 
 export interface Learner {

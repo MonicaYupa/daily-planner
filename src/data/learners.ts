@@ -14,17 +14,48 @@ export const learners: Learner[] = [
     ],
     profile: {
       competencies: [
-        'Critical Thinking',
-        'Collaboration',
-        'Communication',
-        'Problem Solving',
-        'Leadership',
+        {
+          name: 'Knowing How to Learn',
+          level: 4,
+          description: 'Highly motivated and strategic about learning, independently seeks resources and reflects on growth.',
+          color: '#f97316', // orange
+        },
+        {
+          name: 'Personal Qualities',
+          level: 3,
+          description: 'Demonstrates increased personal, physical and social awareness. Analyzes strengths and prioritizes growth.',
+          color: '#ec4899', // pink
+        },
+        {
+          name: 'Social Reasoning',
+          level: 3,
+          description: 'Investigates social issues from multiple perspectives and proposes evidence-based solutions.',
+          color: '#eab308', // yellow
+        },
+        {
+          name: 'Quantitative Reasoning',
+          level: 3,
+          description: 'Reliably uses mathematics and data analysis to solve complex real-world problems.',
+          color: '#14b8a6', // teal
+        },
+        {
+          name: 'Communication',
+          level: 4,
+          description: 'Communicates with presence and purpose across multiple formats and audiences.',
+          color: '#3b82f6', // blue
+        },
+        {
+          name: 'Empirical Reasoning',
+          level: 3,
+          description: 'Asks deep questions, plans investigations, and draws evidence-based conclusions.',
+          color: '#8b5cf6', // purple
+        },
       ],
       academicSkills: [
-        'Research & Analysis',
-        'Technical Writing',
-        'Data Visualization',
-        'Project Management',
+        { name: 'Research & Analysis', level: 4, description: 'Conducts independent research using multiple sources and methodologies.' },
+        { name: 'Technical Writing', level: 3, description: 'Produces clear, well-structured documents for professional audiences.' },
+        { name: 'Data Visualization', level: 4, description: 'Creates compelling visual representations of complex data.' },
+        { name: 'Project Management', level: 3, description: 'Plans and executes multi-week projects with minimal supervision.' },
       ],
     },
     experiences: [
@@ -118,17 +149,48 @@ export const learners: Learner[] = [
     ],
     profile: {
       competencies: [
-        'Scientific Inquiry',
-        'Collaboration',
-        'Adaptability',
-        'Critical Thinking',
-        'Communication',
+        {
+          name: 'Knowing How to Learn',
+          level: 3,
+          description: 'Takes ownership of learning process and actively seeks feedback for improvement.',
+          color: '#f97316',
+        },
+        {
+          name: 'Personal Qualities',
+          level: 3,
+          description: 'Shows resilience and adaptability when facing challenges in research.',
+          color: '#ec4899',
+        },
+        {
+          name: 'Social Reasoning',
+          level: 2,
+          description: 'Recognizes different perspectives on environmental and social issues.',
+          color: '#eab308',
+        },
+        {
+          name: 'Quantitative Reasoning',
+          level: 3,
+          description: 'Applies statistical methods to analyze scientific data effectively.',
+          color: '#14b8a6',
+        },
+        {
+          name: 'Communication',
+          level: 3,
+          description: 'Explains complex scientific concepts clearly to diverse audiences.',
+          color: '#3b82f6',
+        },
+        {
+          name: 'Empirical Reasoning',
+          level: 4,
+          description: 'Designs rigorous experiments and draws well-supported conclusions from data.',
+          color: '#8b5cf6',
+        },
       ],
       academicSkills: [
-        'Lab Techniques',
-        'Statistical Analysis',
-        'Scientific Writing',
-        'Presentation Skills',
+        { name: 'Lab Techniques', level: 4, description: 'Proficiently conducts experiments following proper protocols and safety procedures.' },
+        { name: 'Statistical Analysis', level: 3, description: 'Uses statistical tools to analyze and interpret scientific data.' },
+        { name: 'Scientific Writing', level: 3, description: 'Writes clear lab reports and research summaries.' },
+        { name: 'Presentation Skills', level: 2, description: 'Presents findings to small groups with visual aids.' },
       ],
     },
     experiences: [
@@ -197,17 +259,48 @@ export const learners: Learner[] = [
     ],
     profile: {
       competencies: [
-        'Creativity',
-        'Problem Solving',
-        'Collaboration',
-        'Time Management',
-        'Receiving Feedback',
+        {
+          name: 'Knowing How to Learn',
+          level: 2,
+          description: 'Beginning to identify personal learning strategies and set goals.',
+          color: '#f97316',
+        },
+        {
+          name: 'Personal Qualities',
+          level: 2,
+          description: 'Developing self-awareness and openness to feedback.',
+          color: '#ec4899',
+        },
+        {
+          name: 'Social Reasoning',
+          level: 2,
+          description: 'Considers how games and media impact different communities.',
+          color: '#eab308',
+        },
+        {
+          name: 'Quantitative Reasoning',
+          level: 2,
+          description: 'Applies basic math concepts in game mechanics and scoring systems.',
+          color: '#14b8a6',
+        },
+        {
+          name: 'Communication',
+          level: 3,
+          description: 'Expresses creative ideas clearly through multiple media formats.',
+          color: '#3b82f6',
+        },
+        {
+          name: 'Empirical Reasoning',
+          level: 2,
+          description: 'Tests game designs through user feedback and iterates based on results.',
+          color: '#8b5cf6',
+        },
       ],
       academicSkills: [
-        'Programming Fundamentals',
-        'Visual Design',
-        'Prototyping',
-        'User Testing',
+        { name: 'Programming Fundamentals', level: 2, description: 'Writes basic code using block-based and introductory text languages.' },
+        { name: 'Visual Design', level: 3, description: 'Creates appealing graphics and user interfaces.' },
+        { name: 'Prototyping', level: 2, description: 'Builds quick mockups to test ideas.' },
+        { name: 'User Testing', level: 2, description: 'Gathers and incorporates user feedback into designs.' },
       ],
     },
     experiences: [
