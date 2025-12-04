@@ -3,30 +3,42 @@
 import { Experience } from '@/types';
 import EvidenceCard from './EvidenceCard';
 
-interface ExperienceModalProps {
+interface ExperienceDetailProps {
   experience: Experience;
   onClose: () => void;
 }
 
-export default function ExperienceModal({ experience, onClose }: ExperienceModalProps) {
+export default function ExperienceDetail({ experience, onClose }: ExperienceDetailProps) {
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
-      {/* Backdrop */}
-      <div
-        className="absolute inset-0 bg-sky-950/40 backdrop-blur-sm"
-        onClick={onClose}
-      />
+    <div className="min-h-screen bg-gradient-to-b from-sky-50 to-cyan-50">
+      {/* Header */}
+      <div className="sticky top-0 bg-white/80 backdrop-blur-md border-b border-sky-100 z-10">
+        <div className="max-w-4xl mx-auto px-4 py-4 flex items-center gap-4">
+          <button
+            onClick={onClose}
+            className="flex items-center gap-2 text-sky-600 hover:text-sky-800 transition-colors font-medium"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+            Back to Profile
+          </button>
+        </div>
+      </div>
 
-      {/* Modal */}
-      <div className="relative bg-gradient-to-br from-white to-sky-50 rounded-3xl border border-sky-200 w-full max-w-2xl max-h-[90vh] overflow-y-auto shadow-2xl shadow-sky-500/20">
-        {/* Close button */}
-        <button
-          onClick={onClose}
-          className="absolute top-4 right-4 text-sky-400 hover:text-sky-600 transition-colors p-2 hover:bg-sky-100 rounded-full"
-        >
+      {/* Content */}
+      <div className="max-w-4xl mx-auto px-4 py-8">
+        {/* Hero Image Placeholder */}
+        <div className="h-64 md:h-80 bg-gradient-to-br from-sky-100 to-cyan-100 rounded-2xl flex items-center justify-center mb-8">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
+            className="h-16 w-16 text-sky-300"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -34,35 +46,38 @@ export default function ExperienceModal({ experience, onClose }: ExperienceModal
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
-              strokeWidth={2}
-              d="M6 18L18 6M6 6l12 12"
+              strokeWidth={1.5}
+              d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
             />
           </svg>
-        </button>
+        </div>
 
-        <div className="p-6 md:p-8">
-          {/* Header */}
-          <h2 className="text-2xl font-bold bg-gradient-to-r from-sky-600 to-cyan-600 bg-clip-text text-transparent mb-6 pr-8">
-            Experience {experience.number}: {experience.title}
+        {/* Title */}
+        <div className="mb-8">
+          <span className="text-sm font-medium text-sky-500 uppercase tracking-wide">
+            Experience {experience.number} • Phase {experience.phase}
+          </span>
+          <h1 className="text-3xl md:text-4xl font-bold text-sky-900 mt-2">
+            {experience.title}
+          </h1>
+        </div>
+
+        {/* Overview */}
+        <div className="wave-card rounded-2xl p-6 md:p-8 mb-8">
+          <h2 className="text-sm font-semibold text-sky-600 mb-4 uppercase tracking-wide">
+            Overview
           </h2>
+          <p className="text-sky-800 leading-relaxed text-lg">{experience.overview}</p>
+        </div>
 
-          {/* Overview */}
-          <div className="wave-card rounded-2xl p-5 mb-6">
-            <h3 className="text-sm font-semibold text-sky-600 mb-3 uppercase tracking-wide">
-              Overview
-            </h3>
-            <p className="text-sky-800 leading-relaxed">{experience.overview}</p>
-          </div>
-
-          {/* Evidence */}
-          <h3 className="text-sm font-semibold text-sky-600 mb-3 uppercase tracking-wide">
-            Evidence
-          </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-            {experience.evidence.map((ev) => (
-              <EvidenceCard key={ev.id} evidence={ev} />
-            ))}
-          </div>
+        {/* Evidence */}
+        <h2 className="text-sm font-semibold text-sky-600 mb-4 uppercase tracking-wide">
+          Evidence
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {experience.evidence.map((ev) => (
+            <EvidenceCard key={ev.id} evidence={ev} />
+          ))}
         </div>
       </div>
     </div>

@@ -1,19 +1,16 @@
 'use client';
 
-import { useState } from 'react';
 import { Learner, Experience } from '@/types';
 import ExperienceCard from './ExperienceCard';
-import ExperienceModal from './ExperienceModal';
 import CompetencyFlower from './CompetencyFlower';
 import AcademicSkillsProgress from './AcademicSkillsProgress';
 
 interface LearnerProfileProps {
   learner: Learner;
+  onSelectExperience: (experience: Experience) => void;
 }
 
-export default function LearnerProfile({ learner }: LearnerProfileProps) {
-  const [selectedExperience, setSelectedExperience] = useState<Experience | null>(null);
-
+export default function LearnerProfile({ learner, onSelectExperience }: LearnerProfileProps) {
   return (
     <div className="glass rounded-3xl p-6 md:p-8">
       {/* Header with Photo */}
@@ -66,7 +63,7 @@ export default function LearnerProfile({ learner }: LearnerProfileProps) {
             <ExperienceCard
               key={exp.id}
               experience={exp}
-              onClick={() => setSelectedExperience(exp)}
+              onClick={() => onSelectExperience(exp)}
             />
           ))}
         </div>
@@ -81,14 +78,6 @@ export default function LearnerProfile({ learner }: LearnerProfileProps) {
       <div className="mb-6">
         <AcademicSkillsProgress skills={learner.profile.academicSkills} />
       </div>
-
-      {/* Experience Modal */}
-      {selectedExperience && (
-        <ExperienceModal
-          experience={selectedExperience}
-          onClose={() => setSelectedExperience(null)}
-        />
-      )}
     </div>
   );
 }

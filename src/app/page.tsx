@@ -2,12 +2,25 @@
 
 import { useState } from 'react';
 import { learners } from '@/data/learners';
+import { Experience } from '@/types';
 import LearnerTabs from '@/components/LearnerTabs';
 import LearnerProfile from '@/components/LearnerProfile';
+import ExperienceDetail from '@/components/ExperienceModal';
 
 export default function Home() {
   const [activeLearnerId, setActiveLearnerId] = useState(learners[0].id);
+  const [selectedExperience, setSelectedExperience] = useState<Experience | null>(null);
   const activeLearner = learners.find((l) => l.id === activeLearnerId) || learners[0];
+
+  // If an experience is selected, show only the experience detail
+  if (selectedExperience) {
+    return (
+      <ExperienceDetail
+        experience={selectedExperience}
+        onClose={() => setSelectedExperience(null)}
+      />
+    );
+  }
 
   return (
     <div className="min-h-screen p-4 md:p-8">
@@ -30,7 +43,10 @@ export default function Home() {
         </div>
 
         {/* Learner Profile */}
-        <LearnerProfile learner={activeLearner} />
+        <LearnerProfile
+          learner={activeLearner}
+          onSelectExperience={setSelectedExperience}
+        />
       </div>
     </div>
   );
