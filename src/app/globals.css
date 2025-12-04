@@ -1,8 +1,12 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0c0a09;
-  --foreground: #fafaf9;
+  --background: #f0f9ff;
+  --foreground: #0c4a6e;
+  --wave-light: #e0f2fe;
+  --wave-medium: #7dd3fc;
+  --wave-dark: #0369a1;
+  --wave-deep: #0c4a6e;
 }
 
 @theme inline {
@@ -13,9 +17,11 @@
 }
 
 body {
-  background: var(--background);
+  background: linear-gradient(180deg, #f0f9ff 0%, #e0f2fe 50%, #bae6fd 100%);
+  background-attachment: fixed;
   color: var(--foreground);
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  min-height: 100vh;
 }
 
 /* Hide scrollbar for tabs on mobile */
@@ -26,4 +32,26 @@ body {
 
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
+}
+
+
+/* Animated wave effect for cards */
+.wave-card {
+  position: relative;
+  background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%);
+  border: 1px solid #bae6fd;
+  transition: all 0.3s ease;
+}
+
+.wave-card:hover {
+  border-color: #7dd3fc;
+  box-shadow: 0 8px 30px rgba(3, 105, 161, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Glass effect */
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(186, 230, 253, 0.5);
 }

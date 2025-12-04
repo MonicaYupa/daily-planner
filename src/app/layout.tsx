@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Learner Portfolios",
-  description: "Showcase of learner experiences and growth",
+  title: "Waves Prep | Learner Portfolios",
+  description: "Showcase of learner experiences and growth at Waves Prep",
 };
 
 export default function RootLayout({

@@ -10,8 +10,16 @@ export default function Home() {
   const activeLearner = learners.find((l) => l.id === activeLearnerId) || learners[0];
 
   return (
-    <div className="min-h-screen bg-stone-950 p-4 md:p-8">
+    <div className="min-h-screen p-4 md:p-8">
       <div className="max-w-4xl mx-auto">
+        {/* Header */}
+        <div className="text-center mb-8">
+          <h1 className="text-4xl font-bold text-sky-900 mb-2">
+            Waves Prep
+          </h1>
+          <p className="text-sky-600">Learner Portfolios</p>
+        </div>
+
         {/* Learner Tabs */}
         <div className="mb-6">
           <LearnerTabs
